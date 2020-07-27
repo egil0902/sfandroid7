@@ -51,7 +51,7 @@ public class CommunicationSoap extends SoapObject {
 		//creating Wrapper
 		m_Envelope = new Envelope(getM_Soap_Version());
 		//Defining the Type of Service
-		//m_Envelope.setDotNet(isM_isNetService());
+		m_Envelope.setDotNet(isM_isNetService());
 		//wrapping object
 		m_Envelope.setOutputSoapObject(this);
 	}
@@ -213,7 +213,7 @@ public class CommunicationSoap extends SoapObject {
 	//indicates whether the service is .Net
 	private boolean m_isNetService = true;
 	//Version no soup
-	private int m_Soap_Version = SoapEnvelope.VER12;
+	private int m_Soap_Version = SoapEnvelope.VER11;
 	//Object serializer soap
 	private Envelope m_Envelope;
 	//Transport

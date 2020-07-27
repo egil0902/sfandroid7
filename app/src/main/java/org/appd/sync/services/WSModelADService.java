@@ -60,7 +60,8 @@ public class WSModelADService{
 			l_para = new WSModelRunProcessRequest(ctx, m_NameSpace, p_Web_ServiceType_ID, con, (rs!=null?rs.getInt(rs.getColumnIndex(TableName+"_ID")):null), rs);
 		else
 			l_para = new WSModelCRUDRequest(ctx, m_NameSpace, p_Web_ServiceType_ID, con, (rs!=null?rs.getInt(rs.getColumnIndex(TableName+"_ID")):null), rs,Filter);
-		
+
+		System.out.println(p_Web_ServiceType_ID);
 		m_soap.addSoapObject(l_para);
 		
 		//Inicializando objeto de envoltura
