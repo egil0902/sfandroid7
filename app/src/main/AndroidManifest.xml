@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.appd.base"
+    android:versionCode="1"
+    android:versionName="Beta 1.0.c" >
+
+
+
+    <uses-permission android:name="android.permission.ACCESS_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/idempiere_logo"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        >
+
+        <activity
+            android:name="org.appd.login.Login"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="org.appd.view.MV_Menu" android:label="@string/app_name" android:configChanges="orientation"></activity>
+
+        <!-- Old Declarations -->
+        <activity android:name="org.appd.view.MV_BPartner" android:configChanges="orientation"></activity>
+        <activity
+            android:name="org.appd.view.MV_ListRecord"
+            android:label="@string/app_name"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="adjustPan|adjustResize">
+        </activity>
+        <activity android:name="org.appd.view.MTabActivity" android:label="@string/app_name" android:configChanges="orientation"></activity>
+        <activity android:name="org.appd.view.MT_BPartner" android:label="@string/app_name" android:configChanges="orientation"></activity>
+        <activity android:name="org.appd.view.MT_CustomerInventory" android:label="@string/app_name" android:configChanges="orientation"></activity>
+        <activity android:name="org.appd.view.MV_CustomerInventory" android:label="@string/app_name" android:configChanges="orientation"></activity>
+        <activity android:name="org.appd.view.MV_CustomerInventoryLine" android:label="@string/app_name" android:configChanges="orientation"></activity>
+        <activity android:name="org.appd.view.MV_CustomerOrder" android:label="@string/app_name" android:configChanges="orientation"></activity>
+        <activity android:name="org.appd.view.MV_CustomerOrderLine" android:label="@string/app_name" android:configChanges="orientation"></activity>
+        <activity android:name="org.appd.view.MT_CustomerOrder" android:label="@string/app_name" android:configChanges="orientation"></activity>
+        <activity
+            android:name="org.appd.view.MV_ProductList"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan|adjustResize"
+            android:configChanges="orientation">
+        </activity>
+        <activity android:name="org.appd.view.MV_Synchronizing" android:label="@string/app_name" android:configChanges="orientation"></activity>
+        <activity android:name="org.appd.view.MV_BPartnerLocation" android:label="@string/app_name" android:configChanges="orientation"></activity>
+
+        <activity android:name="org.appd.view.MV_BPartnerPlanningVisit" android:label="@string/app_name" android:configChanges="orientation"></activity>
+        <activity android:name="org.appd.view.MT_CustomerRMA" android:label="@string/app_name" android:configChanges="orientation"></activity>
+        <activity android:name="org.appd.view.MV_CustomerRMA" android:label="@string/app_name" android:configChanges="orientation"></activity>
+        <activity android:name="org.appd.view.MV_CustomerRMALine" android:label="@string/app_name" android:configChanges="orientation"></activity>
+        <activity android:name="org.appd.view.MT_VisitAndLine" android:label="@string/app_name" android:configChanges="orientation"></activity>
+        <activity android:name="org.appd.view.MV_VisitAndLine" android:label="@string/app_name" android:configChanges="orientation"></activity>
+        <activity android:name="org.appd.view.MV_AddVisitLine" android:label="@string/app_name" android:configChanges="orientation"></activity>
+        <activity android:name="org.appd.view.MT_AddVisitLine" android:label="@string/app_name" android:configChanges="orientation"></activity>
+        <activity android:name="org.appd.view.MV_CustomerCollect" android:label="@string/app_name" android:configChanges="orientation"></activity>
+        <activity
+            android:name="org.appd.view.MV_AddCollect"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan|adjustResize"
+            android:configChanges="orientation">
+        </activity>
+        <activity android:name="org.appd.view.MT_Deposit" android:label="@string/app_name" android:configChanges="orientation"></activity>
+        <activity android:name="org.appd.view.MV_Deposit" android:label="@string/app_name" android:configChanges="orientation"></activity>
+        <activity android:name="org.appd.view.MV_DepositLine" android:label="@string/app_name" android:configChanges="orientation"></activity>
+        <activity android:name="org.appd.view.MV_AddCollectToDeposit" android:label="@string/app_name" android:configChanges="orientation"></activity>
+        <activity android:name="org.appd.view.MT_Cash" android:label="@string/app_name" android:configChanges="orientation"></activity>
+        <activity android:name="org.appd.view.MV_Cash" android:label="@string/app_name" android:configChanges="orientation"></activity>
+        <activity android:name="org.appd.view.MV_CashLine" android:label="@string/app_name" android:configChanges="orientation"></activity>
+        <activity android:name="org.appd.util.HandlerFileShare" android:label="@string/app_name" android:configChanges="orientation"></activity>
+        <activity android:name="org.appd.login.V_Connection"	android:label="@string/A_Name" android:configChanges="orientation"></activity>
+
+    </application>
+</manifest>

@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*************************************************************************************
+ * Product: SFAndroid (Sales Force Mobile)                       		             *
+ * This program is free software; you can redistribute it and/or modify it    		 *
+ * under the terms version 2 of the GNU General Public License as published   		 *
+ * by the Free Software Foundation. This program is distributed in the hope   		 *
+ * that it will be useful, but WITHOUT ANY WARRANTY; without even the implied 		 *
+ * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.           		 *
+ * See the GNU General Public License for more details.                       		 *
+ * You should have received a copy of the GNU General Public License along    		 *
+ * with this program; if not, write to the Free Software Foundation, Inc.,    		 *
+ * 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA.                     		 *
+ * For the text or an alternative of this public license, you may reach us    		 *
+ * Copyright (C) 2012-2012 E.R.P. Consultores y Asociados, S.A. All Rights Reserved. *
+ * Contributor(s): Yamel Senih www.erpconsultoresyasociados.com				  		 *
+ ************************************************************************************/
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <CheckBox
+        android:id="@+id/ch_Selection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:contentDescription="@string/Description"
+        android:gravity="center" />
+
+    <ImageView
+        android:id="@+id/img_Record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/Description"
+        android:gravity="center"
+        android:src="@drawable/contruction_h" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="horizontal"
+	        android:baselineAligned="false"
+	        android:layout_weight="1" >
+	        
+		    <LinearLayout
+		        android:id="@+id/ll_lb_DocInvoice"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1.1"
+		        android:orientation="vertical" >
+		
+		        <TextView
+		            android:id="@+id/tv_lb_DocInvoice"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:maxLines="1"
+		            android:text="@string/C_Invoice_ID" />
+		
+		    	<TextView
+		    	    android:id="@+id/tv_DocInvoice"
+		    	    android:layout_width="wrap_content"
+		    	    android:layout_height="match_parent"
+		    	    android:text="@string/C_Invoice_ID"
+		    	    android:textAppearance="?android:attr/textAppearanceMedium" />    	
+		    </LinearLayout>
+		    <LinearLayout
+			    android:id="@+id/ll_lb_GrandTotal"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_weight="1.2"
+			    android:orientation="vertical" >
+			
+			    <TextView
+			    	android:id="@+id/tv_lb_GrandTotal"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:maxLines="1"
+			        android:gravity="right"
+			        android:text="@string/GrandTotal" />
+			
+				<TextView
+			    	android:id="@+id/tv_GrandTotal"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:gravity="right"
+			        android:textAppearance="?android:attr/textAppearanceMedium"
+			        android:text="@string/Zero" />
+			</LinearLayout>
+			<LinearLayout
+			    android:id="@+id/ll_lb_Amt"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_weight="1.2"
+			    android:orientation="vertical" >
+			
+			    <TextView
+			    	android:id="@+id/tv_lb_Amt"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:maxLines="1"
+			        android:gravity="right"
+			        android:text="@string/Amt" />
+			
+				<TextView
+			    	android:id="@+id/tv_Amt"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:gravity="right"
+			        android:textAppearance="?android:attr/textAppearanceMedium"
+			        android:text="@string/Zero" />
+			</LinearLayout>
+			<LinearLayout
+			    android:id="@+id/ll_lb_OpenAmt"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_weight="1.2"
+			    android:orientation="vertical" >
+			
+			    <TextView
+			    	android:id="@+id/tv_lb_OpenAmt"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:maxLines="1"
+			        android:gravity="right"
+			        android:text="@string/OpenAmt" />
+			
+				<TextView
+			    	android:id="@+id/tv_OpenAmt"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:gravity="right"
+			        android:textAppearance="?android:attr/textAppearanceMedium"
+			        android:text="@string/Zero" />
+			</LinearLayout>
+	    </LinearLayout>
+        
+	    <!-- Separator -->
+	    <ImageView
+	        android:id="@+id/img_Separator"
+    		android:src="@android:drawable/divider_horizontal_dim_dark"
+  	 	 	android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:scaleType="fitXY"
+    		android:paddingLeft="5dp"
+    		android:paddingRight="5dp"
+    		android:paddingBottom="2dp"
+    		android:paddingTop="2dp"
+    		android:contentDescription="@string/None" />
+	    
+	    <!-- Check -->
+	    
+	  	<LinearLayout
+	  	    android:id="@+id/ll_lb_Check"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="horizontal"
+	        android:baselineAligned="false"
+	        android:layout_weight="1" >
+	        
+		    <LinearLayout
+		        android:id="@+id/ll_lb_ReferenceNo"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1.1"
+		        android:orientation="vertical" >
+		
+		        <TextView
+		            android:id="@+id/tv_lb_ReferenceNo"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:maxLines="1"
+		            android:text="@string/CheckNo" />
+		
+		    	<TextView
+		    	    android:id="@+id/tv_ReferenceNo"
+		    	    android:layout_width="wrap_content"
+		    	    android:layout_height="wrap_content"
+		    	    android:text="@string/ReferenceNo" />	
+		    </LinearLayout>
+		    <LinearLayout
+			    android:id="@+id/ll_lb_DateDoc"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_weight="1.2"
+			    android:orientation="vertical" >
+			
+			    <TextView
+			    	android:id="@+id/tv_lb_DateDoc"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:maxLines="1"
+			        android:gravity="left"
+			        android:text="@string/Date" />
+			
+				<TextView
+			    	android:id="@+id/tv_DateDoc"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:gravity="left"
+			        android:text="@string/Date" />
+			</LinearLayout>
+			<LinearLayout
+			    android:id="@+id/ll_lb_Bank"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_weight="1.2"
+			    android:orientation="vertical" >
+			
+			    <TextView
+			    	android:id="@+id/tv_lb_Bank"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:maxLines="1"
+			        android:gravity="left"
+			        android:text="@string/C_Bank_ID" />
+			
+				<TextView
+			    	android:id="@+id/tv_Bank"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:gravity="left"
+			        android:text="@string/C_Bank_ID" />
+			</LinearLayout>
+			<LinearLayout
+			    android:id="@+id/ll_lb_Description"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_weight="1.2"
+			    android:orientation="vertical" >
+			
+			    <TextView
+			    	android:id="@+id/tv_lb_Description"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:maxLines="1"
+			        android:gravity="left"
+			        android:text="@string/Description" />
+			
+				<TextView
+			    	android:id="@+id/tv_Description"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:gravity="left"
+			        android:text="@string/Description" />
+			</LinearLayout>
+	    </LinearLayout>
+	    
+	  	<!-- ACH -->
+	  	
+	  	<LinearLayout
+	  	    android:id="@+id/ll_lb_ACH"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="horizontal"
+	        android:baselineAligned="false"
+	        android:layout_weight="1" >
+	        
+		    <LinearLayout
+		        android:id="@+id/ll_lb_RoutingNo"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1.1"
+		        android:orientation="vertical" >
+		
+		        <TextView
+		            android:id="@+id/tv_lb_RoutingNo"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:maxLines="1"
+		            android:text="@string/RoutingNo" />
+		
+		    	<TextView
+		    	    android:id="@+id/tv_RoutingNo"
+		    	    android:layout_width="wrap_content"
+		    	    android:layout_height="wrap_content"
+		    	    android:text="@string/None" />	
+		    </LinearLayout>
+		    <LinearLayout
+			    android:id="@+id/ll_lb_AccountNo"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_weight="1.2"
+			    android:orientation="vertical" >
+			
+			    <TextView
+			    	android:id="@+id/tv_lb_AccountNo"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:maxLines="1"
+			        android:gravity="left"
+			        android:text="@string/AccountNo" />
+			
+				<TextView
+			    	android:id="@+id/tv_AccountNo"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:gravity="left"
+			        android:text="@string/None" />
+			</LinearLayout>
+		</LinearLayout>
+	  	
+	  	<!-- Credit Card -->
+	  	
+	  	<LinearLayout
+	  	    android:id="@+id/ll_lb_CreditCard"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="horizontal"
+	        android:baselineAligned="false"
+	        android:layout_weight="1" >
+	        
+		    <LinearLayout
+		        android:id="@+id/ll_lb_CreditCardType"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_weight="0.9"
+		        android:orientation="vertical" >
+		
+		        <TextView
+		            android:id="@+id/tv_lb_CreditCardType"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:maxLines="1"
+		            android:text="@string/CreditCardType" />
+		
+		    	<TextView
+		    	    android:id="@+id/tv_CreditCardType"
+		    	    android:layout_width="wrap_content"
+		    	    android:layout_height="wrap_content"
+		    	    android:text="@string/None" />	
+		    </LinearLayout>
+		    <LinearLayout
+			    android:id="@+id/ll_lb_CreditCardNumber"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_weight="0.8"
+			    android:orientation="vertical" >
+			
+			    <TextView
+			    	android:id="@+id/tv_lb_CreditCardNumber"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:maxLines="1"
+			        android:gravity="left"
+			        android:text="@string/CreditCardNumber" />
+			
+				<TextView
+			    	android:id="@+id/tv_CreditCardNumber"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:gravity="left"
+			        android:text="@string/None" />
+			</LinearLayout>
+			<LinearLayout
+			    android:id="@+id/ll_lb_CreditCardExpMM"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_weight="1"
+			    android:orientation="vertical" >
+			
+			    <TextView
+			    	android:id="@+id/tv_lb_CreditCardExpMM"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:maxLines="1"
+			        android:gravity="left"
+			        android:text="@string/CreditCardExpMM" />
+			
+				<TextView
+			    	android:id="@+id/tv_CreditCardExpMM"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:gravity="left"
+			        android:text="@string/None" />
+			</LinearLayout>
+			
+			<LinearLayout
+			    android:id="@+id/ll_lb_CreditCardExpYY"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_weight="1"
+			    android:orientation="vertical" >
+			
+			    <TextView
+			    	android:id="@+id/tv_lb_CreditCardExpYY"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:maxLines="1"
+			        android:gravity="left"
+			        android:text="@string/CreditCardExpYY" />
+			
+				<TextView
+			    	android:id="@+id/tv_CreditCardExpYY"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:gravity="left"
+			        android:text="@string/None" />
+			</LinearLayout>
+			
+			<LinearLayout
+			    android:id="@+id/ll_lb_CreditCardVV"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_weight="1"
+			    android:orientation="vertical" >
+			
+			    <TextView
+			    	android:id="@+id/tv_lb_CreditCardVV"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:maxLines="1"
+			        android:gravity="left"
+			        android:text="@string/CreditCardVV" />
+			
+				<TextView
+			    	android:id="@+id/tv_CreditCardVV"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:gravity="left"
+			        android:text="@string/None" />
+			</LinearLayout>
+			
+		</LinearLayout>
+	  	
+    </LinearLayout>
+</LinearLayout>

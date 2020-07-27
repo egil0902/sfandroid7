@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*************************************************************************************
+ * Product: SFAndroid (Sales Force Mobile)                       		             *
+ * This program is free software; you can redistribute it and/or modify it    		 *
+ * under the terms version 2 of the GNU General Public License as published   		 *
+ * by the Free Software Foundation. This program is distributed in the hope   		 *
+ * that it will be useful, but WITHOUT ANY WARRANTY; without even the implied 		 *
+ * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.           		 *
+ * See the GNU General Public License for more details.                       		 *
+ * You should have received a copy of the GNU General Public License along    		 *
+ * with this program; if not, write to the Free Software Foundation, Inc.,    		 *
+ * 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA.                     		 *
+ * For the text or an alternative of this public license, you may reach us    		 *
+ * Copyright (C) 2012-2012 E.R.P. Consultores y Asociados, S.A. All Rights Reserved. *
+ * Contributor(s): Yamel Senih www.erpconsultoresyasociados.com				  		 *
+ ************************************************************************************/
+ -->
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+    	<TextView
+        	android:id="@+id/tV_Value"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/Value" />	
+
+    	<EditText
+        	android:id="@+id/eT_Value"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:inputType="text" >
+        
+        	<requestFocus />
+        </EditText>
+        
+    	<TextView
+        	android:id="@+id/tV_Name"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/Name" />
+
+    	<EditText
+        	android:id="@+id/eT_Name"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:inputType="textPersonName" />
+
+    	<TextView
+        	android:id="@+id/tV_Name2"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/Name2" />
+
+    	<EditText
+        	android:id="@+id/eT_Name2"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:inputType="textPersonName" />
+    	
+    	<TextView
+			android:id="@+id/tv_M_PriceList_ID"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/M_PriceList_ID" />    
+		
+		<org.appd.view.custom.Cust_Spinner
+			android:id="@+id/sp_M_PriceList_ID"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+    	
+    	<!-- Siguinete Fila (Limite de Credito y Credito Usado) -->
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:baselineAligned="false" >
+			
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:orientation="vertical" >
+		        <TextView
+			    	android:id="@+id/tv_C_PaymentTerm_ID"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:lines="1"
+			        android:text="@string/C_PaymentTerm_ID" />    
+		
+				<org.appd.view.custom.Cust_Spinner
+					android:id="@+id/sp_C_PaymentTerm_ID"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content" />			    			    
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:orientation="vertical" >
+				
+			    <TextView
+		            android:id="@+id/tv_SO_CreditLimit"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:lines="1"
+		            android:text="@string/SO_CreditLimit" />    
+	
+				<EditText
+				    android:id="@+id/et_SO_CreditLimit"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:inputType="number"
+				    android:gravity="right"
+				    android:text="@string/Zero" />				            
+			</LinearLayout>
+		</LinearLayout>
+    	
+    	<!-- Siguinete Fila (Credito Disponible y Termino de pago) -->
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:baselineAligned="false" >
+			
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:orientation="vertical" >
+			    
+			    <TextView
+		            android:id="@+id/tv_SO_CreditUsed"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:lines="1"
+		            android:text="@string/SO_CreditUsed" />    
+	
+				<EditText
+				    android:id="@+id/et_SO_CreditUsed"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:gravity="right"
+				    android:inputType="number"
+				    android:text="@string/Zero" />
+				    
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:orientation="vertical" >
+				
+			    <TextView
+		            android:id="@+id/tv_SO_CreditAvailable"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:lines="1"
+		            android:text="@string/SO_CreditAvailable" />    
+	
+				<EditText
+				    android:id="@+id/et_SO_CreditAvailable"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:gravity="right"
+				    android:inputType="number"
+				    android:text="@string/Zero" />
+					            
+			</LinearLayout>
+		</LinearLayout>
+		<!-- Siguinete Fila (Primera Venta y % Descuento) -->
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:baselineAligned="false" >
+			
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:orientation="vertical" >
+		        <TextView
+			    	android:id="@+id/tv_FlatDiscount"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:lines="1"
+			        android:text="@string/FlatDiscount" />    
+		
+				<EditText
+					android:id="@+id/et_FlatDiscount"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content" 
+					android:gravity="right"
+				    android:inputType="number"
+				    android:text="@string/Zero"/>			    			    
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:orientation="vertical" >
+				
+			    <TextView
+		            android:id="@+id/tv_FirstSale"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:lines="1"
+		            android:text="@string/FirstSale" />    
+				<org.appd.view.custom.Cust_DateBox
+					android:id="@+id/cd_FirstSale"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content" />
+			</LinearLayout>
+		</LinearLayout>
+    </LinearLayout>
+</ScrollView>

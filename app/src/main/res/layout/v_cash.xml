@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*************************************************************************************
+ * Product: SFAndroid (Sales Force Mobile)                       		             *
+ * This program is free software; you can redistribute it and/or modify it    		 *
+ * under the terms version 2 of the GNU General Public License as published   		 *
+ * by the Free Software Foundation. This program is distributed in the hope   		 *
+ * that it will be useful, but WITHOUT ANY WARRANTY; without even the implied 		 *
+ * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.           		 *
+ * See the GNU General Public License for more details.                       		 *
+ * You should have received a copy of the GNU General Public License along    		 *
+ * with this program; if not, write to the Free Software Foundation, Inc.,    		 *
+ * 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA.                     		 *
+ * For the text or an alternative of this public license, you may reach us    		 *
+ * Copyright (C) 2012-2012 E.R.P. Consultores y Asociados, S.A. All Rights Reserved. *
+ * Contributor(s): Yamel Senih www.erpconsultoresyasociados.com				  		 *
+ ************************************************************************************/
+ -->
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:baselineAligned="false" >
+			
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:orientation="vertical" >
+			    <TextView
+		            android:id="@+id/tv_DocumentNo"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:lines="1"
+		            android:text="@string/DocumentNo" />    
+	
+				<EditText
+				    android:id="@+id/et_DocumentNo"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:inputType="text"
+				    android:focusable="false"
+				    android:focusableInTouchMode="false"
+				    android:clickable="false"
+				    android:text="@string/msg_New" />
+				    
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:orientation="vertical" >
+				
+			    <TextView
+		            android:id="@+id/tv_C_DocTypeTarget_ID"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:lines="1"
+		            android:text="@string/C_DocTypeTarget_ID" />    
+	
+				<org.appd.view.custom.Cust_Spinner
+				    android:id="@+id/sp_C_DocTypeTarget_ID"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content" />
+					            
+			</LinearLayout>
+		</LinearLayout>
+		<!-- Siguinete Fila (Fecha) -->
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:baselineAligned="false" >
+			
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:orientation="vertical" >
+			    <TextView
+		            android:id="@+id/tv_DateOrdered"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:lines="1"
+		            android:text="@string/StatementDate" />    
+	
+				<org.appd.view.custom.Cust_DateBox
+				    android:id="@+id/cd_StatementDate"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content" />
+				    
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:orientation="vertical" >
+				
+			    <TextView
+		            android:id="@+id/tv_DocAction"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:lines="1"
+		            android:text="@string/DocAction" />    
+	
+				<org.appd.view.custom.Cust_ButtonDocAction
+				    android:id="@+id/cds_DocAction"
+				    android:layout_width="match_parent"
+					android:layout_height="match_parent" />
+						            
+			</LinearLayout>
+		</LinearLayout>
+	    
+		<!-- Beginning Balance and Cash Amt -->		
+		<LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:baselineAligned="false" >
+			
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:orientation="vertical" >
+			    <TextView
+		            android:id="@+id/tv_BeginningBalance"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:lines="1"
+		            android:text="@string/BeginningBalance" />    
+	
+				<EditText
+				    android:id="@+id/et_BeginningBalance"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:inputType="numberSigned"
+				    android:gravity="right"
+				    android:focusable="false"
+				    android:focusableInTouchMode="false"
+				    android:clickable="false"
+				    android:text="@string/Zero" />
+				    
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:orientation="vertical" >
+				
+				<TextView
+		            android:id="@+id/tv_V_CashAmt"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:lines="1"
+		            android:text="@string/V_CashAmt" />    
+	
+				<EditText
+				    android:id="@+id/et_V_CashAmt"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:inputType="numberSigned"
+				    android:gravity="right"
+				    android:focusable="false"
+				    android:focusableInTouchMode="false"
+				    android:clickable="false"
+				    android:text="@string/Zero" />
+			</LinearLayout>
+		</LinearLayout>
+		<!-- OtherAmt and DepositCashAmt -->		
+		<LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:baselineAligned="false" >
+			
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:orientation="vertical" >
+				
+				<TextView
+		            android:id="@+id/tv_V_OtherAmt"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:lines="1"
+		            android:text="@string/V_OtherAmt" />    
+	
+				<EditText
+				    android:id="@+id/et_V_OtherAmt"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:inputType="numberSigned"
+				    android:gravity="right"
+				    android:focusable="false"
+				    android:focusableInTouchMode="false"
+				    android:clickable="false"
+				    android:text="@string/Zero" />
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:orientation="vertical" >
+			    <TextView
+		            android:id="@+id/tv_V_DepositCashAmt"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:lines="1"
+		            android:text="@string/V_DepositCashAmt" />    
+	
+				<EditText
+				    android:id="@+id/et_V_DepositCashAmt"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:inputType="numberSigned"
+				    android:gravity="right"
+				    android:focusable="false"
+				    android:focusableInTouchMode="false"
+				    android:clickable="false"
+				    android:text="@string/Zero" />
+				    
+			</LinearLayout>
+			
+		</LinearLayout>
+		
+		<!-- DepositOtherAmt And Other Deposit -->
+		<LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:baselineAligned="false" >
+			
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:orientation="vertical" >
+			    <TextView
+		            android:id="@+id/tv_V_DepositOtherAmt"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:lines="1"
+		            android:text="@string/V_DepositOtherAmt" />    
+	
+				<EditText
+				    android:id="@+id/et_V_DepositOtherAmt"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:inputType="numberSigned"
+				    android:gravity="right"
+				    android:focusable="false"
+				    android:focusableInTouchMode="false"
+				    android:clickable="false"
+				    android:text="@string/Zero" />
+				    
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:orientation="vertical" >
+				
+				<TextView
+		            android:id="@+id/tv_DepositAmt"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:lines="1"
+		            android:text="@string/V_EndingBalanceAmt" />    
+	
+				<EditText
+				    android:id="@+id/et_V_EndingBalanceAmt"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:inputType="numberSigned"
+				    android:gravity="right"
+				    android:focusable="false"
+				    android:focusableInTouchMode="false"
+				    android:clickable="false"
+				    android:text="@string/Zero" />
+			</LinearLayout>
+		</LinearLayout>
+		
+		<!-- V_DifferenceAmt And Other Deposit -->
+		<LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:baselineAligned="false" >
+			
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:orientation="vertical" >
+			    <TextView
+		            android:id="@+id/tv_V_DifferenceAmt"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:lines="1"
+		            android:text="@string/V_DifferenceAmt" />    
+	
+				<EditText
+				    android:id="@+id/et_V_DifferenceAmt"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:inputType="numberSigned"
+				    android:gravity="right"
+				    android:focusable="false"
+				    android:focusableInTouchMode="false"
+				    android:clickable="false"
+				    android:text="@string/Zero" />
+				    
+			</LinearLayout>
+			<LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:orientation="vertical" >
+				
+				<TextView
+		            android:id="@+id/tv_V_ForDepositAmt"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:lines="1"
+		            android:text="@string/V_ForDepositAmt" />    
+	
+				<EditText
+				    android:id="@+id/et_V_ForDepositAmt"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:inputType="numberSigned"
+				    android:gravity="right"
+				    android:focusable="false"
+				    android:focusableInTouchMode="false"
+				    android:clickable="false"
+				    android:text="@string/Zero" />
+			</LinearLayout>
+		</LinearLayout>
+		
+	</LinearLayout>
+</ScrollView>

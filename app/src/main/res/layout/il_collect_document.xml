@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*************************************************************************************
+ * Product: SFAndroid (Sales Force Mobile)                       		             *
+ * This program is free software; you can redistribute it and/or modify it    		 *
+ * under the terms version 2 of the GNU General Public License as published   		 *
+ * by the Free Software Foundation. This program is distributed in the hope   		 *
+ * that it will be useful, but WITHOUT ANY WARRANTY; without even the implied 		 *
+ * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.           		 *
+ * See the GNU General Public License for more details.                       		 *
+ * You should have received a copy of the GNU General Public License along    		 *
+ * with this program; if not, write to the Free Software Foundation, Inc.,    		 *
+ * 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA.                     		 *
+ * For the text or an alternative of this public license, you may reach us    		 *
+ * Copyright (C) 2012-2012 E.R.P. Consultores y Asociados, S.A. All Rights Reserved. *
+ * Contributor(s): Yamel Senih www.erpconsultoresyasociados.com				  		 *
+ ************************************************************************************/
+ -->
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+
+	    <!-- Open Item -->
+	    
+	    <LinearLayout
+	        android:id="@+id/ll_CashDirectDebit"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:baselineAligned="false"
+	        android:orientation="horizontal" >
+		
+			<LinearLayout
+			    android:id="@+id/ll_TenderType"
+		        android:layout_width="match_parent"
+		        android:layout_weight="3"
+		        android:layout_height="match_parent"
+		        android:orientation="vertical" >
+		    	
+		        <TextView
+		        	android:id="@+id/tv_TenderType"
+		        	android:layout_width="match_parent"
+		        	android:layout_height="wrap_content"
+		        	android:maxLines="1"
+		        	android:gravity="left"
+		        	android:text="@string/TenderType" />
+		        
+		        <Spinner
+		            android:id="@+id/sp_TenderType"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+				    android:gravity="right"
+		            android:selectAllOnFocus="true" />
+			</LinearLayout>
+		    
+		    <LinearLayout
+		        android:id="@+id/ll_Amount"
+		        android:layout_width="match_parent"
+		        android:layout_weight="3"
+		        android:layout_height="match_parent"
+		        android:orientation="vertical" >
+		
+		        <TextView
+		        	android:id="@+id/tv_Amount"
+		        	android:layout_width="match_parent"
+		        	android:layout_height="wrap_content"
+		        	android:maxLines="1"
+		        	android:gravity="right"
+		        	android:text="@string/Amount" />
+		        
+		        <EditText
+		            android:id="@+id/et_Amount"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+				    android:gravity="right"
+		            android:inputType="numberDecimal"
+		            android:selectAllOnFocus="true" />
+			</LinearLayout> 
+
+			<LinearLayout
+			    android:id="@+id/ll_Collect"
+			    android:layout_width="wrap_content"
+			    android:layout_height="match_parent"
+			    android:orientation="vertical" >
+				
+			    <TextView
+		        	android:id="@+id/tv_Action"
+		        	android:layout_width="match_parent"
+		        	android:layout_height="wrap_content"
+		        	android:maxLines="1"
+		        	android:gravity="right"
+		        	android:text="@string/msg_Actions" />
+			    
+			    <Button
+			        android:id="@+id/butt_Add"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:drawableLeft="@drawable/listadd_l" />
+			    
+			</LinearLayout> 
+	    </LinearLayout>
+	    
+	    <!-- Separator -->
+		<ImageView
+			android:id="@+id/img_Separator"
+	    	android:src="@android:drawable/divider_horizontal_dim_dark"
+	  	 	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:scaleType="fitXY"
+	    	android:paddingLeft="5dp"
+	    	android:paddingRight="5dp"
+	    	android:paddingBottom="2dp"
+	    	android:paddingTop="2dp"
+	    	android:contentDescription="@string/None" />
+	    
+	
+	    <!-- Check -->
+	    
+	    <LinearLayout
+	        android:id="@+id/ll_Check"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:baselineAligned="false"
+	        android:orientation="horizontal" >
+		    
+	        <LinearLayout
+		        android:id="@+id/ll_ReferenceNo"
+		        android:layout_width="match_parent"
+		        android:layout_weight="1"
+		        android:layout_height="match_parent"
+		        android:orientation="vertical" >
+		
+		        <TextView
+		        	android:id="@+id/tv_ReferenceNo"
+		        	android:layout_width="match_parent"
+		        	android:layout_height="wrap_content"
+		        	android:maxLines="1"
+		        	android:gravity="left"
+		        	android:text="@string/ReferenceNo" />
+		        
+		        <EditText
+		            android:id="@+id/et_ReferenceNo"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+				    android:gravity="right"
+		            android:inputType="text"
+		            android:selectAllOnFocus="true" />
+			</LinearLayout> 
+	        
+	      	<LinearLayout
+		        android:id="@+id/ll_DateDoc"
+		        android:layout_width="match_parent"
+		        android:layout_weight="1"
+		        android:layout_height="match_parent"
+		        android:orientation="vertical" >
+		
+		        <TextView
+		            android:id="@+id/tv_DateDoc"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="@string/Date" />
+		
+		    	<org.appd.view.custom.Cust_DateBox
+		            android:id="@+id/db_DateDoc"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+				    android:gravity="right"
+		            android:inputType="text"
+		            android:selectAllOnFocus="true" />
+		    </LinearLayout>
+		
+			<LinearLayout
+			    android:id="@+id/ll_C_Bank_ID"
+		        android:layout_width="match_parent"
+		        android:layout_weight="1"
+		        android:layout_height="match_parent"
+		        android:orientation="vertical" >
+		    	
+		        <TextView
+		        	android:id="@+id/tv_C_Bank_ID"
+		        	android:layout_width="match_parent"
+		        	android:layout_height="wrap_content"
+		        	android:maxLines="1"
+		        	android:gravity="left"
+		        	android:text="@string/C_Bank_ID" />
+		        
+		        <Spinner
+		            android:id="@+id/sp_C_Bank_ID"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+				    android:gravity="right"/>
+			</LinearLayout>
+		</LinearLayout>
+		
+	  	<!-- ACH -->
+	    
+	    <LinearLayout
+	        android:id="@+id/ll_ACH"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:baselineAligned="false"
+	        android:orientation="horizontal" >
+		    
+	        <LinearLayout
+		        android:id="@+id/ll_RoutingNo"
+		        android:layout_width="match_parent"
+		        android:layout_weight="1"
+		        android:layout_height="match_parent"
+		        android:orientation="vertical" >
+		
+		        <TextView
+		        	android:id="@+id/tv_RoutingNo"
+		        	android:layout_width="match_parent"
+		        	android:layout_height="wrap_content"
+		        	android:maxLines="1"
+		        	android:gravity="left"
+		        	android:text="@string/RoutingNo" />
+		        
+		        <EditText
+		            android:id="@+id/et_RoutingNo"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+				    android:gravity="right"
+		            android:inputType="text"
+		            android:selectAllOnFocus="true" />
+			</LinearLayout> 
+		
+			<LinearLayout
+			    android:id="@+id/ll_AccountNo"
+		        android:layout_width="match_parent"
+		        android:layout_weight="1"
+		        android:layout_height="match_parent"
+		        android:orientation="vertical" >
+		    	
+		        <TextView
+		        	android:id="@+id/tv_AccountNo"
+		        	android:layout_width="match_parent"
+		        	android:layout_height="wrap_content"
+		        	android:maxLines="1"
+		        	android:gravity="left"
+		        	android:text="@string/AccountNo" />
+		        
+		        <EditText
+		            android:id="@+id/et_AccountNo"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+				    android:gravity="right"
+		            android:inputType="text"
+		            android:maxLength="20"
+		            android:selectAllOnFocus="true" />
+		  	</LinearLayout>
+		</LinearLayout>
+		
+	    <!-- Credit Card -->
+	    
+	    <LinearLayout
+	        android:id="@+id/ll_CreditCard"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:baselineAligned="false"
+	        android:orientation="vertical" >
+		    
+	        <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="0dp"
+		        android:orientation="horizontal"
+		        android:layout_weight="1"
+		        android:baselineAligned="true" >
+		    	
+	            <LinearLayout
+		        	android:id="@+id/ll_CreditCardType"
+		        	android:layout_width="match_parent"
+		        	android:layout_weight="1"
+		        	android:layout_height="match_parent"
+		        	android:orientation="vertical" >
+		
+		        	<TextView
+		        		android:id="@+id/tv_CreditCardType"
+		        		android:layout_width="match_parent"
+		        		android:layout_height="wrap_content"
+		        		android:maxLines="1"
+		        		android:gravity="left"
+		        		android:text="@string/CreditCardType" />
+		        
+		        	<Spinner
+		            	android:id="@+id/sp_CreditCardType"
+		            	android:layout_width="match_parent"
+		            	android:layout_height="wrap_content" />
+				</LinearLayout> 
+				
+				<LinearLayout
+		        	android:id="@+id/ll_CreditCardNumber"
+		        	android:layout_width="match_parent"
+		        	android:layout_weight="1"
+		        	android:layout_height="match_parent"
+		        	android:orientation="vertical" >
+		
+		        	<TextView
+		        		android:id="@+id/tv_CreditCardNumber"
+		        		android:layout_width="match_parent"
+		        		android:layout_height="wrap_content"
+		        		android:maxLines="1"
+		        		android:gravity="right"
+		        		android:text="@string/CreditCardNumber" />
+		        
+		        	<EditText
+		            	android:id="@+id/et_CreditCardNumber"
+		            	android:layout_width="match_parent"
+		            	android:layout_height="wrap_content"
+				    	android:gravity="right"
+		            	android:inputType="numberSigned"
+		            	android:maxLength="20"
+		            	android:selectAllOnFocus="true" />
+				</LinearLayout> 
+			</LinearLayout>
+			
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:baselineAligned="true"
+	            android:orientation="horizontal" >
+		    	
+	            <LinearLayout
+		        	android:id="@+id/ll_CreditCardExpMM"
+		        	android:layout_width="match_parent"
+		        	android:layout_weight="1"
+		        	android:layout_height="wrap_content"
+		        	android:orientation="vertical" >
+		
+		        	<TextView
+		        		android:id="@+id/tv_CreditCardExpMM"
+		        		android:layout_width="match_parent"
+		        		android:layout_height="wrap_content"
+		        		android:maxLines="1"
+		        		android:gravity="left"
+		        		android:text="@string/CreditCardExpMM" />
+		        
+		        	<EditText
+		        	    android:id="@+id/et_CreditCardExpMM"
+		        	    android:layout_width="match_parent"
+		        	    android:layout_height="wrap_content"
+		        	    android:gravity="right"
+		        	    android:inputType="numberSigned"
+		        	    android:maxLength="2"
+		        	    android:selectAllOnFocus="true" />
+				</LinearLayout> 
+				
+				<LinearLayout
+				    android:id="@+id/ll_CreditCardExpYY"
+				    android:layout_width="match_parent"
+				    android:layout_height="match_parent"
+				    android:layout_weight="1"
+				    android:orientation="vertical" >
+		
+		        	<TextView
+		        		android:id="@+id/tv_CreditCardExpYY"
+		        		android:layout_width="match_parent"
+		        		android:layout_height="wrap_content"
+		        		android:maxLines="1"
+		        		android:text="@string/CreditCardExpYY" />
+		        
+		        	<EditText
+		            	android:id="@+id/et_CreditCardExpYY"
+		            	android:layout_width="match_parent"
+		            	android:layout_height="wrap_content"
+				    	android:gravity="right"
+		            	android:inputType="numberSigned"
+		            	android:maxLength="2"
+		            	android:selectAllOnFocus="true" />
+				</LinearLayout>
+				
+				<LinearLayout
+		        	android:id="@+id/ll_CreditCardVV"
+		        	android:layout_width="match_parent"
+		        	android:layout_height="match_parent"
+		        	android:layout_weight="1"
+		        	android:orientation="vertical" >
+		
+		        	<TextView
+		        		android:id="@+id/tv_CreditCardVV"
+		        		android:layout_width="match_parent"
+		        		android:layout_height="wrap_content"
+		        		android:maxLines="1"
+		        		android:text="@string/CreditCardVV" />
+		        
+		        	<EditText
+		        	    android:id="@+id/et_CreditCardVV"
+		        	    android:layout_width="match_parent"
+		        	    android:layout_height="wrap_content"
+		        	    android:gravity="right"
+		        	    android:inputType="numberSigned"
+		        	    android:maxLength="3"
+		        	    android:selectAllOnFocus="true" />
+
+				</LinearLayout>
+			</LinearLayout>
+	        <LinearLayout
+		        android:id="@+id/ll_A_Name"
+		        android:layout_width="match_parent"
+		        android:layout_weight="1"
+		        android:layout_height="match_parent"
+		        android:orientation="vertical" >
+		
+		        <TextView
+		        	android:id="@+id/tv_A_Name"
+		        	android:layout_width="match_parent"
+		        	android:layout_height="wrap_content"
+		        	android:maxLines="1"
+		        	android:gravity="left"
+		        	android:text="@string/A_Name" />
+		        
+		        <EditText
+		       		android:id="@+id/et_A_Name"
+		        	android:layout_width="match_parent"
+		        	android:layout_height="wrap_content"
+		        	android:gravity="right"
+		        	android:hint="@string/A_Name"
+		        	android:inputType="text"
+		        	android:maxLength="60"
+		        	android:selectAllOnFocus="true" />
+			</LinearLayout>
+		</LinearLayout>
+	  	
+</LinearLayout>

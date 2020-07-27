@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+	    android:id="@+id/opt_ProductInfo"
+    	android:title="@string/msg_ProductInfo">
+	</item>
+	<item
+	    android:id="@+id/opt_Delete"
+    	android:title="@string/msg_Delete">
+	</item>
+</menu>
