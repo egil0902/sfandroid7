@@ -366,7 +366,7 @@ public class InitialLoad extends AsyncTask{
 		Msg.contentView.setTextViewText(R.id.tV_CurrentSinchronizing, textNotify);
 		Msg.contentView.setTextViewText(R.id.tV_Percentaje, percentage.intValue()+"%");
 		Msg.contentView.setProgressBar(R.id.pB_Sinchronizing, len_serv, current, false);
-	
+
 		m_NotificationManager.notify(Msg.notification_ID, Msg.notification);
 	}
 }

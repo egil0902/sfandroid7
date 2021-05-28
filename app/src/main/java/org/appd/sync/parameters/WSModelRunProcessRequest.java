@@ -34,8 +34,8 @@ public class WSModelRunProcessRequest extends SoapObject{
 	 * @author Carlos Parada 09/11/2012, 21:53:53
 	 * @param ctx Contexto
 	 * @param NameSpace Nombre del Espacio
-	 * @param p_prop
-	 * @param Name
+	 * @param p_WS_WebServiceType_ID
+	 * @param con
 	 */
 	public WSModelRunProcessRequest(Context ctx, String NameSpace,Integer p_WS_WebServiceType_ID,DB con,Integer RecordID,Cursor rs) {
 		super(NameSpace, "ModelRunProcessRequest");

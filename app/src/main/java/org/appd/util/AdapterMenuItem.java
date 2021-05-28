@@ -40,7 +40,7 @@ public class AdapterMenuItem extends ArrayAdapter<DisplayMenuItem>{
 	 * *** Constructor de la Clase ***
 	 * @author Yamel Senih 28/04/2012, 00:45:59
 	 * @param ctx
-	 * @param textViewResourceId
+	 * @param id_View
 	 * @param data
 	 */
 	public AdapterMenuItem(Activity ctx, int id_View, LinkedList<DisplayMenuItem> data) {

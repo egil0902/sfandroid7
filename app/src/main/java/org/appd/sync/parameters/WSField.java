@@ -30,7 +30,7 @@ public class WSField extends SoapObject{
 	 * @author Carlos Parada 22/05/2012, 02:15:36
 	 * @param ctx
 	 * @param NameSpace
-	 * @param Name
+	 * @param p_ColumnName
 	 */
 	public WSField(Context ctx, String NameSpace,String p_ColumnName,Object p_Value) {
 		super(NameSpace, "field");

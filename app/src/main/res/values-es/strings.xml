@@ -10,9 +10,9 @@
     <string name="Name">Nombre</string>
     <string name="Name2">Razón Social</string>
     <string name="Save">Guardar</string>
-    <string name="C_BPartner_ID">Socio de Negocio</string>
+    <string name="C_BPartner_ID">Tercero</string>
     <string name="Description">Descripción</string>
-    <string name="C_BP_Group_ID">Grupo de Socio de Negocio</string>
+    <string name="C_BP_Group_ID">Grupo de Tercero</string>
     <string name="C_BP_Location_ID">Localización</string>
     <string name="DocumentNo">Nro de Documento</string>
     <string name="C_DocTypeTarget_ID">Tipo de Documento Destino</string>
@@ -137,7 +137,7 @@
 	<string name="t_DepositAmt">Monto a Depositar</string>
 	<string name="t_DepositLine">Líneas de Depósito</string>
 	
-	<string name="app_description" >SFAndroid es una aplicación cuidadosamente diseñada como una solución de Fuerza de Ventas offline "100%" Android, heredando el Diccionario de Aplicación de ADempiere, sus Roles y accesos de forma dinámica.</string>
+	<string name="app_description" >SFAndroid es una aplicación cuidadosamente diseñada como una solución de Fuerza de Ventas offline "100%" Android, heredando el Diccionario de Aplicación de IDempiere, sus Roles y accesos de forma dinámica.</string>
 	<string name="app_version_name" >Nombre de Versión</string>
 	<string name="app_version_code" >Código de Version</string>
 	<string name="app_permissions" >Permisos</string>

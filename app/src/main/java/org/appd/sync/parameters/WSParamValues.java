@@ -34,8 +34,8 @@ public class WSParamValues extends SoapObject{
 	 * @author Carlos Parada 22/05/2012, 01:43:31
 	 * @param ctx
 	 * @param NameSpace
-	 * @param p_prop
-	 * @param Name
+	 * @param p_WS_WebServiceType_ID
+	 * @param p_con
 	 */
 	public WSParamValues(Context ctx, String NameSpace,Integer p_WS_WebServiceType_ID,DB p_con,Cursor rs) {
 		super(NameSpace, "ParamValues");

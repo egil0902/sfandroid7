@@ -40,7 +40,6 @@ public class AdapterVisitLine extends ArrayAdapter<DisplayVisitItem>{
 	 * @param ctx
 	 * @param id_View
 	 * @param data
-	 * @param action
 	 */
 	public AdapterVisitLine(Activity ctx, int id_View, LinkedList<DisplayVisitItem> data) {
 		super(ctx, id_View, data);

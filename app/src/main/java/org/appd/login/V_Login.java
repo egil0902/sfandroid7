@@ -158,8 +158,8 @@ public class V_Login extends Fragment implements I_Login {
     public void onStart() {
     	super.onStart();
     	//red1 for fast testing purpose
-    	et_User.setText("zona12");
-    	et_Pass.setText("zona12");
+    	et_User.setText("dzona05");
+    	et_Pass.setText("dzona05");
         String user = et_User.getText().toString();
      	String pass = et_Pass.getText().toString();
      	//boolean isSavePass = ch_SavePass.isChecked();

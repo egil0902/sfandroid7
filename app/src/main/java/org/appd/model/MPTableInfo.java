@@ -33,7 +33,6 @@ public class MPTableInfo {
 	 * 
 	 * *** Constructor de la Clase ***
 	 * @author Yamel Senih 27/03/2012, 02:10:28
-	 * @param ctx
 	 * @param con
 	 * @param AD_Table_ID
 	 */

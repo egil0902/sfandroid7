@@ -52,7 +52,6 @@ public class MBSynchronizingTrace extends MP {
 	 * *** Constructor de la Clase ***
 	 * @author Carlos Parada 26/07/2012
 	 * @param ctx
-	 * @param con_tx
 	 * @param ID
 	 */
 	public MBSynchronizingTrace(Context ctx, int ID) {
@@ -75,8 +74,7 @@ public class MBSynchronizingTrace extends MP {
 	 * *** Constructor de la Clase ***
 	 * @author Carlos Parada 10/26/2012
 	 * @param ctx
-	 * @param con_tx
-	 * @param ID
+	 * @param rs
 	 */
 	public MBSynchronizingTrace(Context ctx, Cursor rs) {
 		super(ctx, rs);

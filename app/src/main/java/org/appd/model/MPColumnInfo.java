@@ -44,7 +44,6 @@ public class MPColumnInfo {
 	 * @param DefaultLogic
 	 * @param IsUpdateable
 	 * @param ColumnLabel
-	 * @param IsTranslated
 	 * @param IsEncrypted
 	 * @param FieldLength
 	 * @param ValueMin

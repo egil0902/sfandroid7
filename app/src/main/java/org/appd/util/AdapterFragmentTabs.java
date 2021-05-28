@@ -47,8 +47,8 @@ public class AdapterFragmentTabs extends FragmentPagerAdapter implements
      * 
      * *** Constructor ***
      * @author Yamel Senih 06/02/2013, 12:49:26
-     * @param fm
-     * @param ctx
+     * @param activity
+     * @param mTabHost
      */
     public AdapterFragmentTabs(FragmentActivity activity, TabHost mTabHost, Cust_ViewPager pager) {
         super(activity.getSupportFragmentManager());

@@ -328,9 +328,7 @@ public class CallServices extends AsyncTask{
 	 * @author Carlos Parada 06/11/2012, 00:04:25
 	 * @param TableName
 	 * @param con
-	 * @param fieldParent
-	 * @param dataParentID
-	 * @param syncParent_ID
+	 * @param where
 	 * @return
 	 * @return Cursor
 	 */
@@ -656,11 +654,12 @@ public class CallServices extends AsyncTask{
 	/**
 	 * writeSoapRespUpload Escribe ID Generado por Adempiere 
 	 * @author Carlos Parada 13/07/2012, 18:01:29
-	 * @param so
+	 * @param p_IDRow
 	 * @param TableName
 	 * @param m_WS_WebServiceType
 	 * @param con
-	 * @return
+	 * @param p_Data
+	 * @param st
 	 * @return boolean
 	 */
 	private boolean writeSoapRespUpload(int p_IDRow,String TableName,int m_WS_WebServiceType,DB con,Cursor p_Data,MBSynchronizingTrace st)
@@ -782,7 +781,7 @@ public class CallServices extends AsyncTask{
 	/**
 	 * Call the Update process
 	 * @author carlos Parada 06/08/2012, 01:48:56
-	 * @param values
+	 * @param params
 	 * @return void
 	 */
 	@Override

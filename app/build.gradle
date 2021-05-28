@@ -26,5 +26,5 @@ dependencies {
     compile files('libs/itext-pdfa-5.3.4.jar')
     compile files('libs/js-android-jaspermobile.jar')
     //compile files('libs/ksoap2-android-assembly-3.0.0.jar')
-    compile 'com.google.code.ksoap2-android:ksoap2-android:3.6.3'
+    implementation 'com.google.code.ksoap2-android:ksoap2-android:3.6.3'
 }

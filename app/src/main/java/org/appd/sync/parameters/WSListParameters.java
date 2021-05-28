@@ -71,7 +71,7 @@ public class WSListParameters extends AttributeContainer implements KvmSerializa
 	/**
      * Establece las variables en hashmap de propiedades
      * @author Carlos Parada 20/05/2012
-     * @param hashmap propiedades
+     * @param p_prop propiedades
      * @return void
      */
 	public void setProperties(ArrayList<PField> p_prop)
@@ -82,7 +82,7 @@ public class WSListParameters extends AttributeContainer implements KvmSerializa
 	/**
      * Establece las propiedades del objetos
      * @author Carlos Parada 20/05/2012
-     * @param hashmap propiedades
+     * @param p_prop propiedades
      * @return void
      */
 	public void setProperties(Cursor p_prop)
@@ -103,7 +103,7 @@ public class WSListParameters extends AttributeContainer implements KvmSerializa
     /**
      * Devuelve el valor de una propiedad del parametro
      * @author Carlos Parada 20/05/2012
-     * @param int indice del item
+     * @param item indice del item
      * @return object
      */
 	@Override
@@ -126,7 +126,7 @@ public class WSListParameters extends AttributeContainer implements KvmSerializa
     /**
      * Establece el nombre y tipo de datos de la columna
      * @author Carlos Parada 20/05/2012
-     * @param int indice del item,hashtable hasmap item, propertiinfo arg
+     * @param arg0 indice del item,hashtable hasmap item, propertiinfo arg
      * @return void
      */
 	
