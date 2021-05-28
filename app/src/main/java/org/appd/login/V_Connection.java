@@ -85,7 +85,7 @@ public class V_Connection extends Activity implements I_Login {
     	//red1 using et_User.getText().toString().trim();
     	// Carlos Parada Initializing for not writing the same thing all the time
     	//red1 allow user setting
-    	et_UrlSoap.setText("http://prim.ghintech.com:8091/ADInterface/services/AppDroidServices?wsdl");
+    	et_UrlSoap.setText("http://localhost:8080/ADInterface/services/AppDroidServices?wsdl");
       	et_UrlSoap.getText().toString().trim();
       	//DO NOT CHANGE NameSpace value
     	et_NameSpace.setText("http://www.erpconsultoresasociados.com/");
